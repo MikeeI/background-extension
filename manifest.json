@@ -73,7 +73,8 @@
       "js": [
         "js/jquery/jquery.min.js",
         "js/bootstrap.min.js",
-        "js/underscore.js"
+        "js/underscore.js",
+        "src/content.js"
       ]
     }
   ]
