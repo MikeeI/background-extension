@@ -10,13 +10,16 @@
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
   },
+  
+  "options_page": "src/options_custom/index.html",
 
   "browser_action": {
     "default_icon": {
       "19": "icons/icon19.png",
       "48": "icons/icon48.png"
     },
-    "default_title": "BG"
+    "default_title": "BG",
+    "default_popup": "src/browser_action/browser_action.html"
   },
 
   "default_locale": "en",
@@ -31,9 +34,7 @@
   ],
 
   "background": {
-    "scripts": [
-      "src/background.js"
-    ],
+    "page": "src/background/background.html",
     "persistent": true
   },
 
@@ -42,9 +43,12 @@
   },
 
   "web_accessible_resources": [
-    "js/jquery/jquery.min.js",
+    "js/jquery/jquery.js",
     "js/bootstrap.min.js",
     "js/underscore.js",
+    "src/inject.js",
+    "src/inject.css",
+    "src/browser_action/browser_action.js",
 
     "css/bootstrap-theme.css",
     "css/bootstrap.min.css",
@@ -71,10 +75,10 @@
       ],
 
       "js": [
-        "js/jquery/jquery.min.js",
+    "js/jquery/jquery.js",
         "js/bootstrap.min.js",
         "js/underscore.js",
-        "src/content.js"
+        "src/inject/inject.js"
       ]
     }
   ]
